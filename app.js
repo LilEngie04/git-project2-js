@@ -56,9 +56,37 @@ console.log(typeof null)*/
 
 //5 - Приоритет операторів
 
+/*
 const fullAge = 18
 const birthYear = 2004
 const currentYear = 2022
 
 const isFullAge = currentYear - birthYear >= fullAge
-console.log(isFullAge)
+console.log(isFullAge)*/
+
+//6 - Умовні оператори
+
+/*const courseStatus = 'pending'
+
+if (courseStatus === 'ready') {
+    console.log('Курс готовий')
+} else if (courseStatus === 'pending') {
+    console.log('Курс розробляється')
+} else {
+    console.log('Курс провалився')
+}*/
+const isReady = true
+
+/*if (isReady) {
+    console.log('Готово')
+} else {
+    console.log('Нічого не готово')
+}*/
+
+isReady ? console.log('Готово') : console.log('Нічого не готово')
+
+/*const num1 = 42
+const num2 = '42'
+
+console.log(num1 == num2)*/
+
