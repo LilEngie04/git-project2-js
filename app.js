@@ -83,10 +83,18 @@ const isReady = true
     console.log('Нічого не готово')
 }*/
 
-isReady ? console.log('Готово') : console.log('Нічого не готово')
+//isReady ? console.log('Готово') : console.log('Нічого не готово')
 
 /*const num1 = 42
 const num2 = '42'
 
 console.log(num1 == num2)*/
 
+// 8 - Функції
+
+function calculateAge(year) {
+    return 2022 - year
+}
+
+const myAge = calculateAge(2004)
+console.log(myAge)
