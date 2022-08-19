@@ -43,6 +43,7 @@ console.log(c)*!/*/
 
 //4 - Типи даних
 
+/*
 const isProgrammer = true
 const name = 'Vlad'
 const age = 18
@@ -51,4 +52,13 @@ console.log(typeof isProgrammer)
 console.log(typeof name)
 console.log(typeof age)
 console.log(typeof x)
-console.log(typeof null)
+console.log(typeof null)*/
+
+//5 - Приоритет операторів
+
+const fullAge = 18
+const birthYear = 2004
+const currentYear = 2022
+
+const isFullAge = currentYear - birthYear >= fullAge
+console.log(isFullAge)
