@@ -1,4 +1,4 @@
-//1 - Змінні
+/*//1 - Змінні
 const firstName = 'Vlad'
 //const lastName = 'Melnyk'
 //const age = 18
@@ -10,13 +10,13 @@ const $ = 'some values'
 const  withNum5 = '5'
 
 //2 - Мутування
-/*
+/!*
 console.log('Імя людини: '+ firstName + ', а вік людини: ' + age)
-console.log(age)*/
+console.log(age)*!/
 
-/*
+/!*
 const lastName = prompt('Введіть прізвище')
-alert(firstName + ' ' + lastName)*/
+alert(firstName + ' ' + lastName)*!/
 
 //3 - Оператори
 
@@ -30,7 +30,7 @@ const b = 5
 
 let c = 32
 //c = c + a
-/*
+/!*
 c +=a
 
 console.log(a+b)
@@ -39,4 +39,16 @@ console.log(a*b)
 console.log(a/b)
 console.log(++currentYear)
 console.log(--currentYear)
-console.log(c)*/
+console.log(c)*!/*/
+
+//4 - Типи даних
+
+const isProgrammer = true
+const name = 'Vlad'
+const age = 18
+let x
+console.log(typeof isProgrammer)
+console.log(typeof name)
+console.log(typeof age)
+console.log(typeof x)
+console.log(typeof null)
