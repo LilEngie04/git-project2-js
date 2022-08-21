@@ -92,9 +92,72 @@ console.log(num1 == num2)*/
 
 // 8 - Функції
 
+/*
 function calculateAge(year) {
     return 2022 - year
 }
 
-const myAge = calculateAge(2004)
-console.log(myAge)
+/!*const myAge = calculateAge(2004)
+console.log(myAge)*!/
+
+function logInfoAbout(name, year) {
+    const age = calculateAge(year)
+    if(age>0){
+        console.log('Людина на імя ' + name + ' має вік ' + age)
+    } else {
+        console.log('Некоректні дані')
+    }
+
+}
+logInfoAbout('Влад', 2004)
+logInfoAbout('Миколай', 2024)*/
+
+// 9 - Масиви
+
+/*
+const cars = ['Mazda', 'Mercedes', 'Ford']
+//const cars = new Array('Mazda', 'Mercedes', 'Ford')
+
+console.log(cars[1])
+
+console.log(cars.length)
+
+cars[0] = 'Porsche'
+
+cars[cars.length] = 'Mazda'
+
+console.log(cars)*/
+
+// 10 - Цикли
+
+/*
+const cars = ['Mazda', 'Mercedes', 'Ford', 'Porsche']
+/!*
+for(let i = 0; i<cars.length; i++) {
+    const car = cars[i]
+    console.log(car)
+}*!/
+for(let car of cars) {
+    console.log(car)
+}*/
+
+// 11 - Об'єкти
+
+const person = {
+    firstName: 'Vlad',
+    lastName: 'Melnyk',
+    year: 2004,
+    languages: ['Ru', 'Ua', 'En'],
+    hasWife: false,
+    greet: function () {
+        console.log('greet')
+    }
+}
+console.log(person.firstName)
+console.log(person['lastName'])
+const key = 'languages'
+console.log(person[key])
+person.hasWife = true
+person.isProgrammer = true
+console.log(person)
+person.greet()
