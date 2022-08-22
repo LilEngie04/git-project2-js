@@ -1,163 +1,49 @@
-/*//1 - Змінні
-const firstName = 'Vlad'
-//const lastName = 'Melnyk'
-//const age = 18
-const isProgrammer = true
-
-const _private = 'private'
-const $ = 'some values'
-
-const  withNum5 = '5'
-
-//2 - Мутування
-/!*
-console.log('Імя людини: '+ firstName + ', а вік людини: ' + age)
-console.log(age)*!/
-
-/!*
-const lastName = prompt('Введіть прізвище')
-alert(firstName + ' ' + lastName)*!/
-
-//3 - Оператори
-
-let currentYear = 2022
-const birthYear = 2004
-
-//const age = currentYear - birthYear
-
-const a = 10
-const b = 5
-
-let c = 32
-//c = c + a
-/!*
-c +=a
-
-console.log(a+b)
-console.log(a-b)
-console.log(a*b)
-console.log(a/b)
-console.log(++currentYear)
-console.log(--currentYear)
-console.log(c)*!/*/
-
-//4 - Типи даних
+// 1 - Number
 
 /*
-const isProgrammer = true
-const name = 'Vlad'
-const age = 18
-let x
-console.log(typeof isProgrammer)
-console.log(typeof name)
-console.log(typeof age)
-console.log(typeof x)
-console.log(typeof null)*/
+const num = 42
+const float = 42.42
+const pow = 10e3
+console.log('MAX_SAFE_INTEGER', Number.MAX_SAFE_INTEGER)
+console.log('Math.pow 53', Math.pow(2, 53) - 1)
+console.log('MIN_SAFE_INTEGER', Number.MIN_SAFE_INTEGER)
+console.log('MAX_VALUE', Number.MAX_VALUE)
+console.log('MIN_VALUE', Number.MIN_VALUE)
+console.log('MAX_VALUE', Number.MAX_VALUE)
+console.log('POSITIVE_INFINITY', Number.POSITIVE_INFINITY)
+console.log('NEGATIVE_INFINITY', Number.NEGATIVE_INFINITY)
+console.log('2/0', 2/0)
+console.log(Number.NaN)
+console.log(typeof NaN)
+const weird = 2/undefined
+console.log(Number.isNaN(weird))
+console.log(Number.isNaN(42))
+console.log(Number.isFinite(Infinity))
+console.log(Number.isFinite(42))
 
-//5 - Приоритет операторів
+const stringInt = '40'
+const stringFloat = '40.42'
+console.log(Number.parseInt(stringInt) + 2)
+console.log(parseInt(stringInt) + 2)
+console.log(Number(stringInt) + 2)
+console.log(+stringInt + 2)
+console.log(parseFloat(stringFloat) + 2)
+console.log(+stringFloat + 2)
 
-/*
-const fullAge = 18
-const birthYear = 2004
-const currentYear = 2022
+console.log(0.4 + 0.2)
+console.log(+(0.4+0.2).toFixed(1))
+console.log(parseFloat((0.4+0.2).toFixed(1)))*/
 
-const isFullAge = currentYear - birthYear >= fullAge
-console.log(isFullAge)*/
-
-//6 - Умовні оператори
-
-/*const courseStatus = 'pending'
-
-if (courseStatus === 'ready') {
-    console.log('Курс готовий')
-} else if (courseStatus === 'pending') {
-    console.log('Курс розробляється')
-} else {
-    console.log('Курс провалився')
-}*/
-const isReady = true
-
-/*if (isReady) {
-    console.log('Готово')
-} else {
-    console.log('Нічого не готово')
-}*/
-
-//isReady ? console.log('Готово') : console.log('Нічого не готово')
-
-/*const num1 = 42
-const num2 = '42'
-
-console.log(num1 == num2)*/
-
-// 8 - Функції
+// 2 - BigInt
 
 /*
-function calculateAge(year) {
-    return 2022 - year
-}
+console.log(90071992547409919999999n - 9007199254740991999999n)
+console.log(-90071992547409919999999n)
+//console.log(90071992547409919999999.23231n) // error
 
-/!*const myAge = calculateAge(2004)
-console.log(myAge)*!/
+//console.log(10n-4) // error
+console.log(parseInt(10n) - 4)
+console.log(10n - BigInt(4))
+console.log(5n / 2n) // 2n*/
 
-function logInfoAbout(name, year) {
-    const age = calculateAge(year)
-    if(age>0){
-        console.log('Людина на імя ' + name + ' має вік ' + age)
-    } else {
-        console.log('Некоректні дані')
-    }
-
-}
-logInfoAbout('Влад', 2004)
-logInfoAbout('Миколай', 2024)*/
-
-// 9 - Масиви
-
-/*
-const cars = ['Mazda', 'Mercedes', 'Ford']
-//const cars = new Array('Mazda', 'Mercedes', 'Ford')
-
-console.log(cars[1])
-
-console.log(cars.length)
-
-cars[0] = 'Porsche'
-
-cars[cars.length] = 'Mazda'
-
-console.log(cars)*/
-
-// 10 - Цикли
-
-/*
-const cars = ['Mazda', 'Mercedes', 'Ford', 'Porsche']
-/!*
-for(let i = 0; i<cars.length; i++) {
-    const car = cars[i]
-    console.log(car)
-}*!/
-for(let car of cars) {
-    console.log(car)
-}*/
-
-// 11 - Об'єкти
-
-const person = {
-    firstName: 'Vlad',
-    lastName: 'Melnyk',
-    year: 2004,
-    languages: ['Ru', 'Ua', 'En'],
-    hasWife: false,
-    greet: function () {
-        console.log('greet')
-    }
-}
-console.log(person.firstName)
-console.log(person['lastName'])
-const key = 'languages'
-console.log(person[key])
-person.hasWife = true
-person.isProgrammer = true
-console.log(person)
-person.greet()
+// 3 - Math
